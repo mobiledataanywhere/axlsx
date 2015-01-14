@@ -37,7 +37,8 @@ module Axlsx
       @default_grid_color = @show_grid_lines = @show_row_col_headers = @show_ruler = @show_zeros = true
       @zoom_scale = 100
       # Fix for use with ClicData service by setting @zoom_scale_normal to 10 to be within the valid range of 10 - 400
-      @zoom_scale_normal = @zoom_scale_page_layout_view = @zoom_scale_sheet_layout_view = @workbook_view_id = 10
+      @zoom_scale_normal = @zoom_scale_page_layout_view = @zoom_scale_sheet_layout_view = 10
+      @workbook_view_id = 0
       @selections = {}
       parse_options options
     end
